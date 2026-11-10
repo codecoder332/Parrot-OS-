@@ -1,0 +1,14 @@
+
+{
+  "name": "Parrot GUI Test",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Parrot Desktop",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
